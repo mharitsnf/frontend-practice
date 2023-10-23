@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice 1</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Day 1: CSS</h1>
+    <p>Topics covered:</p>
+    <ul>
+      <li>Basic selections using id, class, and element</li>
+      <li>Pseudo class</li>
+      <li>Pseudo element</li>
+      <li>Combination of pseudo class and pseudo element</li>
+      <li>Combinators</li>
+    </ul>
+  </header>
+
+  <hr>
+
+  <section>
+    <h2>Pseudo-class</h2>
+    <p>Selecting the first child using the <code>:first-child</code> selector.</p>
+    <article id="article-1" class="box">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus et accusantium nisi dolores eius
+        necessitatibus. Minus iste nam cupiditate ad. Est unde facilis accusamus porro amet, placeat aspernatur et
+        repellat?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aspernatur ipsam commodi sequi
+        exercitationem ad eum architecto repudiandae officiis possimus ratione corporis officia, hic rem minima, maiores
+        numquam illum tempora?</p>
+    </article>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Pseudo-element</h2>
+    <p>Selecting the first lines using the <code>::first-line</code> selector.</p>
+    <article id="article-2" class="box">
+      <p>First line: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus et accusantium nisi dolores eius
+        necessitatibus. Minus iste nam cupiditate ad. Est unde facilis accusamus porro amet, placeat aspernatur et
+        repellat?</p>
+      <p>Second line Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aspernatur ipsam commodi
+        sequi exercitationem ad eum architecto repudiandae officiis possimus ratione corporis officia, hic rem minima,
+        maiores numquam illum tempora?</p>
+    </article>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Combination of pseudo-class and pseudo-element</h2>
+    <p>Generating content using <code>::before</code> and/or <code>::after</code> pseudo-element</p>
+    <article id="article-3" class="box">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus et accusantium nisi dolores eius
+        necessitatibus. Minus iste nam cupiditate ad. Est unde facilis accusamus porro amet, placeat aspernatur et
+        repellat?</p>
+    </article>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Child selector</h2>
+    <p>Selecting <em>direct</em> children using <code>></code>.</p>
+    <article id="article-4" class="box">
+      <ul>
+        <li>Child 1</li>
+        <li>Child 2</li>
+        <ol>
+          <li>Grandchild 1</li>
+          <li>Grandchild 2</li>
+        </ol>
+      </ul>
+    </article>
+  </section>
+
+  <hr>
+  
+  <section>
+    <h2>Descendant selector</h2>
+    <p>Selecting <em>all</em> children and grandchildren using white space</p>
+    <article id="article-5" class="box">
+      <ul>
+        <li>Child 1</li>
+        <li>Child 2</li>
+        <ol>
+          <li>Grandchild 1</li>
+          <li>Grandchild 2</li>
+        </ol>
+      </ul>
+    </article>
+  </section>
+
+  <hr>
+  
+  <section>
+    <h2>Direct Sibling</h2>
+    <p>Selecting <em>direct</em> sibling of a specific element using <code>+</code>.</p>
+    <article id="article-6" class="box">
+      <h3>h3: Subtitle 1</h3>
+      <p>An article</p>
+      <h3>h3: Subtitle 2</h3>
+      <h3>h3: Another subtitle (not affected)</h3>
+      <p>An article</p>
+    </article>
+  </section>
+
+  <hr>
+  
+  <section>
+    <h2>All Sibling</h2>
+    <p>Selecting <em>all</em> siblings of a specific element using <code>~</code>.</p>
+    <article id="article-7" class="box">
+      <h3>Subtitle A</h3>
+      <p>Paragraph 1</p>
+      <h3>Subtitle B</h3>
+      <p>Paragraph 2</p>
+      </article>
+  </section>
+
+  <section>
+    <h2>Nested</h2>
+    <p>Selecting elements using nested CSS.</p>
+    <article id="article-8" class="box">
+      <h3>Subtitle A</h3>
+      <p>Paragraph 1</p>
+      <h3>Subtitle B</h3>
+      <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+      </ul>
+      <div>
+        <p>Im a <code>p</code> inside a <code>div</code></p>
+      </div>
+    </article>
+  </section>
+
+  <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+
+
+.box {
+    /* Orderings: */
+    /* padding: top right bottom left */
+    padding: 2px 8px 2px 8px;
+    border: 2px solid;
+}
+
+code {
+    background-color: lightgrey;
+    border-radius: 2px;
+    padding: 2px 6px 2px 6px;
+}
+
+
+/* Pseudo class (using the `:` symbol) */
+#article-1 p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* Pseudo-element (using the `::` symbol) */
+#article-2 p::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* Select the first child of #article-3, and then put this style at the end of the content (::after). */
+#article-3 p:first-child::after {
+    font-weight: bold;
+    content: " I'm added from CSS!";
+}
+
+
+#article-4 ul > li {
+    background-color: gray;
+}
+
+#article-5 ul li {
+    background-color: gray;
+}
+
+/* Selecting direct sibling */
+#article-6 h3 + p {
+    background-color: gray;
+}
+
+/* Selecting indirect sibling */
+#article-7 h3 ~ p {
+    background-color: gray;
+}
+
+#article-8 {
+    /* p that is DIRECT CHILD of #article-8 */
+    > p {
+        background-color: bisque;
+    }
+
+    /* p that is CHILD of ul that is CHILD of #article-8 */
+    & ul li {
+        background-color: aquamarine;
+    }
+
+    & div {
+        /* p that is DIRECT CHILD of div that is CHILD of #article-8 */
+        > p {
+            background-color: blanchedalmond;
+        }
+    }
+}
