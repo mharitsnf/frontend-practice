@@ -1,0 +1,9 @@
+
+#article-1 p {
+    color: darkblue;
+    font-weight: bold;
+}
+
+#article-1 p[class~="second"] {
+    font-weight: revert;
+}
